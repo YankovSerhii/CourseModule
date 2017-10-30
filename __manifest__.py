@@ -2,21 +2,22 @@
 {
     'name': "AcademyCourseModule",
 
-    'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+    'summary': """Training""",
 
     'description': """
-        Long description of module's purpose
+        Open Academy module for training:
+            - trining courss
+            - Sessions
+            - etc...
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Serhii Yankov",
+    'website': "http://github.com/YankovSerhii",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Test',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
@@ -25,7 +26,7 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
+        # 'views/views.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode
