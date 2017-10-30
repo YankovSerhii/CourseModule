@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_academy_course_module_academy_course_module,academy_course_module.academy_course_module,model_academy_course_module_academy_course_module,,1,0,0,0
