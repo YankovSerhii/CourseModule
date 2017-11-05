@@ -10,6 +10,9 @@ class Course(models.Model):
 
     responsible_id = fields.Many2one('res.users',
         ondelete='set null', string="Responsible", index=True)
+    session_ids = fields.One2many(
+        'openacademy.session', 'course_id', string="Sessions")
+
 
 
 class Session(models.Model):
@@ -23,7 +26,7 @@ class Session(models.Model):
     instructor_id = fields.Many2one('res.partner', string="Instructor")
     course_id = fields.Many2one('openacademy.course',
         ondelete='cascade', string="Course", required=True)
-
+    attendee_ids = fields.Many2many('res.partner', string="Attendees")
 
 
 # class academy_course_module(models.Model):
